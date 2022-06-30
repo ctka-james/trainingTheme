@@ -6,3 +6,30 @@ Author URL: http://localhost/wordpress
 Description: Learning how to WP theme DEV
 Version: 1.0v
 */
+body {
+    background-color: black;
+    color: white;
+}
+
+
+p {
+    font-size: 1em;
+    color: gray;
+    line-height: 1em;
+}
+
+aside h2 {
+    font-size: 1.5em;
+    text-align: center;
+    color: gray;
+    line-height: 1.5em;
+    letter-spacing: 5px;
+    background-color: rgb(127, 238, 232);
+    width: 300px;
+    border-radius: 10px;
+    /*圓弧角*/
+}
+
+aside li {
+    list-style: none;
+}
