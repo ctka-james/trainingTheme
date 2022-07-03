@@ -10,31 +10,26 @@ Version: 1.0v
 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
 body {
-    /* 設定字級em，往後的設定若為1em則代表16*1.25px (1em為16px) */
-    font-size: 125%;
-    background-color: black;
-    color: white;
+    font-family: 'Noto+Sans+TC';
+    font-size: 100%;
+    color:gray;
 }
 
-
-p {
-    font-size: 1em;
-    color: gray;
-    line-height: 1em;
-}
-
-aside h2 {
-    font-size: 1.5em;
+#web-title{
     text-align: center;
-    color: gray;
-    line-height: 1.5em;
-    letter-spacing: 5px;
-    background-color: rgb(127, 238, 232);
-    width: 300px;
-    border-radius: 10px;
-    /*圓弧角*/
+    width: 100%;
+    font-size: 4em;
+    font-weight: bold;
+    color: #222;
+}
+#web-description{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    font-style: italic;
+    color:red;
 }
 
-aside li {
-    list-style: none;
+#header-menu{
+    border-color: #cfc;
 }

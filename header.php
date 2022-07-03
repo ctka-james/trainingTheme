@@ -13,7 +13,7 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <!-- wp_enqueue -->
-    <?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply') ?>
+    <?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?>
     <!-- wp_head -->
     <?php wp_head(); ?>
     <!-- 載入 style.css -->
@@ -23,8 +23,27 @@
 
 <body>
     <div class="container">
-        <div class="well well-md">
-            <h1><?php bloginfo('name'); ?></h1>
-            <em><?php bloginfo('description'); ?></em>
-            <nav><?php wp_nav_menu(array('theme-location' => 'primary-menu')); ?></nav>
-        </div>
+        <header>
+            <div class="well well-md">
+                <div id="web-title">
+                    <?php bloginfo('name'); ?>
+                </div>
+                <div id="web-description">
+                    <?php bloginfo('description'); ?>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-primary bg-faded" id="header-menu">
+            <a href="<?php echo home_url(); ?>" class="navbar-brand">測試的網站</a>
+            <hr>
+            <div class="container-fluid">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'primary',
+                    'menu_id' => 'main-main',
+                    'menu_class' => 'nav nav-bar',
+                ));
+                ?>
+            </div>
+            <hr>
+        </nav>
