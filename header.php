@@ -35,15 +35,15 @@
         </header>
         <nav class="navbar navbar-primary bg-faded" id="header-menu">
             <a href="<?php echo home_url(); ?>" class="navbar-brand">測試的網站</a>
-            <hr>
+
             <div class="container-fluid">
                 <?php
                 wp_nav_menu(array(
-                    'theme_location' => 'primary',
-                    'menu_id' => 'main-main',
-                    'menu_class' => 'nav nav-bar',
+                    'theme_location' => 'primary-menu',
+                    'menu_id' => 'main-menu',
+                    'menu_class' => 'nav navbar-nav',
                 ));
                 ?>
             </div>
-            <hr>
+
         </nav>

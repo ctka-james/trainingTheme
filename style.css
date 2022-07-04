@@ -9,27 +9,29 @@ Description: Learning how to WP theme DEV
 Version: 1.0v
 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
+
 body {
     font-family: 'Noto+Sans+TC';
     font-size: 100%;
-    color:gray;
+    color: gray;
 }
 
-#web-title{
+#web-title {
     text-align: center;
     width: 100%;
     font-size: 4em;
     font-weight: bold;
     color: #222;
 }
-#web-description{
+
+#web-description {
     text-align: center;
     width: 100%;
     font-size: 1.5em;
     font-style: italic;
-    color:red;
+    color: red;
 }
 
-#header-menu{
-    border-color: #cfc;
+#header-menu {
+    background-color: #cfc;
 }
