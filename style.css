@@ -35,3 +35,9 @@ body {
 #header-menu {
     background-color: #cfc;
 }
+#footer-menu{
+    background-color: #fcc;
+}
+#footer{
+    border-top: 1px solid gray;
+}

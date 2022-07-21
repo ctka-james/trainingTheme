@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<pre><?php print_r(array('a' => '1', 'b' => '2')); ?></pre>
 <hr>
 <table>
     <tr>

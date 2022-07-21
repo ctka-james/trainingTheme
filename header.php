@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <header>
             <div class="well well-md">
                 <div id="web-title">
@@ -36,7 +36,7 @@
         <nav class="navbar navbar-primary bg-faded" id="header-menu">
             <a href="<?php echo home_url(); ?>" class="navbar-brand">測試的網站</a>
 
-            <div class="container-fluid">
+            <div class="container">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'primary-menu',
