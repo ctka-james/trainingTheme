@@ -2,6 +2,7 @@
 <html <?php language_attributes(); ?>>
 
 <head>
+    <!-- 瀏覽器預設語系 -->
     <meta charset=<?php bloginfo('charset') ?>>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <!-- wp_enqueue -->
-    <?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?>
+    <!-- <?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?> -->
     <!-- wp_head -->
     <?php wp_head(); ?>
     <!-- 載入 style.css -->
